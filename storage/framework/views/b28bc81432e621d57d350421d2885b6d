@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		<?php $__env->startSection("titleHead"); ?>
+			Template FTIK
+		<?php $__env->stopSection(); ?>
+	</title>
+	<?php $__env->startSection("head"); ?>
+	<script type="text/javascript" src="<?php echo e(asset('jamil-template/jquery.min.js')); ?>"></script>
+	<script type="text/javascript" src="<?php echo e(asset('Jamil/Template/public/bootstrap/js/bootstrap.min.js')); ?>"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('jamil-template/bootstrap/css/bootstrap.min.css')); ?>">
+	<?php echo $__env->yieldSection(); ?>
+</head>
+<body>
+
+	<div class="container">
+		<?php $__env->startSection("header"); ?>
+			<h1>Template</h1>
+		<?php echo $__env->yieldSection(); ?>
+	</div>
+
+	<?php $__env->startSection("navigation"); ?>
+		<?php echo $__env->make("JamilTemplate::nav", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	<?php echo $__env->yieldSection(); ?>
+
+	<div class="container">
+		<?php $__env->startSection("layout"); ?>
+		
+		<?php echo $__env->yieldSection(); ?>
+	</div>
+
+	<div class="container">
+		<div class="text-center">
+			<?php $__env->startSection("footer"); ?>
+				Copyright &copy; <?php echo e(date("Y")); ?> by Rofilde Hasudungan. All Right Reserved.
+			<?php echo $__env->yieldSection(); ?>	
+		</div>
+		
+	</div>
+	
+</body>
+</html>

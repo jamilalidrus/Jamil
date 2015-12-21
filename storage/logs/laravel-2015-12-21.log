@@ -1,0 +1,18 @@
+[2015-12-21 07:34:46] local.ERROR: exception 'ErrorException' with message 'Declaration of Jamil\Template\TemplateProvider::boot() should be compatible with Illuminate\Foundation\Support\Providers\RouteServiceProvider::boot(Illuminate\Routing\Router $router)' in D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\src\Jamil\Template\TemplateProvider.php:32
+Stack trace:
+#0 D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\vendor\composer\ClassLoader.php(412): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2048, 'Declaration of ...', 'D:\\Jamil Al-idr...', 32, Array)
+#1 D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\vendor\composer\ClassLoader.php(412): Composer\Autoload\includeFile()
+#2 D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('D:\\Jamil Al-idr...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Jamil\\Template\\...')
+#4 D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(150): spl_autoload_call('Jamil\\Template\\...')
+#5 D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(75): Illuminate\Foundation\ProviderRepository->createProvider('Jamil\\Template\\...')
+#6 D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(439): Illuminate\Foundation\ProviderRepository->load(Array)
+#7 D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(15): Illuminate\Foundation\Application->registerConfiguredProviders()
+#8 D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(167): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#9 D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(191): Illuminate\Foundation\Application->bootstrapWith(Array)
+#10 D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(88): Illuminate\Foundation\Console\Kernel->bootstrap()
+#11 D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 {main}  
+[2015-12-21 07:39:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Illuminate\Foundation\ServiceProvider' not found' in D:\Jamil Al-idrus\My document\Materi Kuliah\SEMESTER 5\framework lanjutan\FWLanjutan\src\Jamil\Template\TemplateProvider.php:7
+Stack trace:
+#0 {main}  
